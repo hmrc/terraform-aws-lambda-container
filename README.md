@@ -1,7 +1,6 @@
-
 # terraform-aws-lambda-container
 
-This is a placeholder README.md for a new repository
+This Terraform module creates an AWS Lambda function that runs a container image.
 
 ### License
 
