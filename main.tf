@@ -31,6 +31,10 @@ resource "aws_lambda_function" "this" {
   tags = merge({
     Git_Repo = var.lambda_git_repo
   }, var.lambda_function_tags)
+
+  depends_on = [
+    aws_cloudwatch_log_group.lambda
+  ]
 }
 
 resource "aws_lambda_alias" "latest" {
